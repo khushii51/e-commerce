@@ -151,6 +151,7 @@ export const updateOrder = async (req, res) => {
       order.quantity = quantity;
       order.total_price = order.price * quantity;
     }
+    
 
     if (status !== undefined) {
       order.status = status;
